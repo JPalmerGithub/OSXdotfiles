@@ -1,0 +1,110 @@
+#!/usr/bin/env bash
+
+echo "Cracking New Kegs"
+brew update # Make sure we’re using the latest Homebrew
+
+echo "Replacing Skunked Beverages with New Versions"
+brew upgrade # Upgrade any already-installed formulae
+
+echo "Brewing GNU Core Utilities" # Install GNU core utilities (those that come with OS X are outdated)
+echo "Don’t forget to add $(brew --prefix coreutils)/libexec/gnubin to \$PATH. if not already complete"
+brew install coreutils 						# Install GN Core Utilities 
+brew install findutils 						# Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
+brew install bash 							# Install Bash 4
+brew install wget --enable-iri 				# Install wget with IRI support
+
+# Install RingoJS and Narwhal
+# Note that the order in which these are installed is important; see http://git.io/brew-narwhal-ringo.
+brew install ringojs 						# Install latest version of RingoJS
+brew install narwhal 						# Install Latest Narwhal
+
+echo "Brewing recent versions of Tools for OSX" # Install more recent versions of some OS X tools
+brew tap homebrew/dupes 					# Tap the duplicate Formulas for Homebrew
+brew install homebrew/dupes/grep 			# Install Grep
+brew tap josegonzalez/homebrew-php 			# Tap Homebrew-PHP
+brew install php55							# Install Latest PHP (5.5)
+
+echo "Brewing Native Apps" 					# Install native apps
+brew tap homebrew/versions 					# Tap the versions Formulas for Homebrew
+brew tap phinze/homebrew-cask 				# Tap the Cask formulas
+brew install brew-cask 						# Install the Bew-Cask commands (continued in the Function)
+
+function installcask() {
+	brew cask install "${@}" 2> /dev/null
+}
+
+echo "Brewing Hacking/Cracking Binaries" 	# Install Hacking/cracking Binaries
+#brew install ncrack						# Install NCrack Network Cracking Utility (Currently Broken)
+brew install NMAP 							# Install NMAP CLI
+#brew install John 							# install John the Ripper password cracker CLI (Currently Broken)
+brew install tor 							# install Tor Network CLI
+brew install pdfcrack 						#i Install a PDF Password Cracking utility
+
+
+echo "Brewing Utility Binaries" 			# install Utility Binaries
+brew install p7zip 							# Install CLI Version of 7Zip
+brew install osxfuse 						# Install OSX Fuse drive compatability utility
+brew install osxutils 						# Install MetaData and CLI Utilis for OSX
+brew install screen 						# Install the GNU Screen application for Full screen window manager
+installcask the-unarchiver 					# Install The Unarchiver app for OSX
+installcask dropbox 						# Install DropBox Application
+installcask ukelele 						# Install ukelele UTF-*  Keyboard Mapping Application
+
+echo "Brewing VM/Remote Access Binaries" 	# Install VM/Remote Access
+installcask virtualbox 						# Install Virtual Box x86 architecture Virtualization
+brew install rdesktop						# Install Remote Desktop (Windows) 
+
+echo "Brewing PDF Manipulation Binaries" 	# Install PDF Manipulation Binaries
+brew install pdf2htmlex 					# Install Text PDF to HTML designer
+brew install pdftohtml 						# Install Standard PDF to HTML designer
+# brew install pdf2image 					# Install PDF to Image App (Currently Broken)
+
+echo "Brewing Web/Net Related Binaries" 	# install Web Related Binaries
+brew install wget 							# Install wget downloader application
+brew install webkit2png						# Install App to screenshot whole web pages, not just visable
+brew install elinks 						# Install Kick Arse text based web browser
+installcask google-chrome 					# Install Google's Chrome Browser
+installcask google-chrome-canary 			# Install Canary, a stripped down version of Chrome
+installcask transmission 					# Install Transmission, a Bit torrent client for OSX
+installcask tor-browser 					# Install A Tor Network compatable Browser for anonymoity
+
+echo "Brewing Media Related Binaries" # install Web Related Binaries
+brew install ffmpeg 						# Install FFMpeg, a CLI Media tool
+brew install youtube-dl 					# Install a Youtube (and other) media downloader app
+brew install imagemagick					# Install a Photo Editing Package
+installcask vlc 							# Install one of the world's most popular Players/editors
+installcask miro-video-converter 			# Install a video Converter
+installcask imagealpha 						# Install a heavy compression package fore PNG Images
+installcask imageoptim 						# Install an image optimized for faster loading speeds
+
+echo "Brewing General CLI Binaries" # install General CLI Binaries
+brew install tree 							# Install a Visual (text) Directory Tree Displaying tool
+brew install midnight-commander 			# Text based "OSX Finder" Looks like the original "Norton Commander"
+brew install rename 						# Install A better Rename command
+brew install trash 							# Install a Trash command to send filez from CLI to the trash in the finder
+brew install liquidprompt 					# Install an Awsome "prompt" for the terminal (completely configurable)
+brew install keychain 						# Install a KeyChain application for SSH-SSL keys
+brew install exiv2 							# Install an Image Meta Library and it's tools
+brew install git 							# Install a powerful decentrilized revision control system
+brew install pigz 							# Install Paralell implementation of GZip (multicore-multiprocessor)
+installcask iterm2							# Install new "terminal"
+
+echo "Brewing Programing Languages/Utilities" # Install Programming Utils/Language Binaries
+brew install gcc47 							# install Gcc 4.7
+brew install ruby 							# Install latest version of Ruby
+brew install mysql 							# Install Latest MySQL DB App
+brew install jruby							# Install Java Ruby 
+brew install php-code-sniffer 				# Install PHP Code analyzer
+brew install rhino 							# Install Rhino, Java Script Engine
+brew install ack 							# Install Serch web for instances of text
+brew install node 							# Install Node Code Optimiser for OSX
+brew install lua52 							# Install LUA version 5.2 language
+brew install zopfli 						# Install re-compressor for GZip Archives (tighter Compression)
+
+echo "Brewing Text Editing/Manipulation Binaries" #install Editing Binaries
+brew install vim 							# Install the latest VIM CLI Editor
+installcask macvim 							# Install the MacVIM GUI Command line editor based on VIM CLI
+#installcask sublime-text 					# Install the lastest Homebrew source for Sublime Text (older version)
+
+echo "Mopping up the old and broken Beverages" # Remove outdated versions from the cellar
+brew cleanup
