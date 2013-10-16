@@ -38,8 +38,15 @@ echo "Brewing Hacking/Cracking Binaries" 	# Install Hacking/cracking Binaries
 brew install NMAP 							# Install NMAP CLI
 #brew install John 							# install John the Ripper password cracker CLI (Currently Broken)
 brew install tor 							# install Tor Network CLI
-brew install pdfcrack 						#i Install a PDF Password Cracking utility
-
+brew install pdfcrack 						# Install a PDF Password Cracking utility
+brew install elasticsearch					# Install install ElasticSearch Distributed Search
+brew install redis							# install Redis Server (for Whitechappel and elasticsearch support)
+brew install sshtrix						# Install SSH Login Cracker (sshv1, v2)
+brew install proxytunnel					# Install CLI Proxy tunneling app
+brew install msitools						# Install MSI "Windoze" installer files
+brew install metasploit						# Install the Metasploit Framework
+brew install ettercap						# Install the Ettercap "man in the middle" tool
+brew install aircrack-ng
 
 echo "Brewing Utility Binaries" 			# install Utility Binaries
 brew install p7zip 							# Install CLI Version of 7Zip
@@ -47,8 +54,8 @@ brew install osxfuse 						# Install OSX Fuse drive compatability utility
 brew install osxutils 						# Install MetaData and CLI Utilis for OSX
 brew install screen 						# Install the GNU Screen application for Full screen window manager
 installcask the-unarchiver 					# Install The Unarchiver app for OSX
-installcask dropbox 						# Install DropBox Application
-installcask ukelele 						# Install ukelele UTF-*  Keyboard Mapping Application
+brew install liquirprompt					# Install Prompt for CLI (best I've ever seen)
+#installcask dropbox 						# Install DropBox Application
 
 echo "Brewing VM/Remote Access Binaries" 	# Install VM/Remote Access
 installcask virtualbox 						# Install Virtual Box x86 architecture Virtualization
@@ -64,14 +71,20 @@ brew install wget 							# Install wget downloader application
 brew install webkit2png						# Install App to screenshot whole web pages, not just visable
 brew install elinks 						# Install Kick Arse text based web browser
 installcask google-chrome 					# Install Google's Chrome Browser
-installcask google-chrome-canary 			# Install Canary, a stripped down version of Chrome
 installcask transmission 					# Install Transmission, a Bit torrent client for OSX
 installcask tor-browser 					# Install A Tor Network compatable Browser for anonymoity
+brew install wireshark						# Install Open SOurce Packet Analyzer
+brew install tcptrace						# Install CLI Utilities to analize TCP Dump trafic (shows "tracing" of connections)
+brew install tcpreplay						# Install TCP Dump "edit/replay" Functionality
+brew install tcpflow						# Install better CLI "tcpdump" utility
+brew install openssl						# Install the Open Source SSL toolkit
+# installcask google-chrome-canary 			# Install Canary, a stripped down version of Chrome
 
 echo "Brewing Media Related Binaries" # install Web Related Binaries
 brew install ffmpeg 						# Install FFMpeg, a CLI Media tool
 brew install youtube-dl 					# Install a Youtube (and other) media downloader app
 brew install imagemagick					# Install a Photo Editing Package
+brew install mplayer						# Install MPlayer a multi format video client
 installcask vlc 							# Install one of the world's most popular Players/editors
 installcask miro-video-converter 			# Install a video Converter
 installcask imagealpha 						# Install a heavy compression package fore PNG Images
@@ -87,7 +100,7 @@ brew install keychain 						# Install a KeyChain application for SSH-SSL keys
 brew install exiv2 							# Install an Image Meta Library and it's tools
 brew install git 							# Install a powerful decentrilized revision control system
 brew install pigz 							# Install Paralell implementation of GZip (multicore-multiprocessor)
-installcask iterm2							# Install new "terminal"
+# installcask iterm2							# Install new "terminal"
 
 echo "Brewing Programing Languages/Utilities" # Install Programming Utils/Language Binaries
 brew install gcc47 							# install Gcc 4.7
@@ -100,11 +113,22 @@ brew install ack 							# Install Serch web for instances of text
 brew install node 							# Install Node Code Optimiser for OSX
 brew install lua52 							# Install LUA version 5.2 language
 brew install zopfli 						# Install re-compressor for GZip Archives (tighter Compression)
+brew install python							# Install the Python Language (note the following commands are updaters)
+brew install sysbench						# Install a System Benchmarking CLI app
+brew install msgpack						# Install a Bianary serialization format to exchange data between different programing languages
+
+pip install --upgrade setuptools
+pip install --upgrade pip
 
 echo "Brewing Text Editing/Manipulation Binaries" #install Editing Binaries
 brew install vim 							# Install the latest VIM CLI Editor
 installcask macvim 							# Install the MacVIM GUI Command line editor based on VIM CLI
+brew install ttyrec							# Install a CLI recorder for Terminal 9ttyrec-ttyplay commands)
 #installcask sublime-text 					# Install the lastest Homebrew source for Sublime Text (older version)
 
 echo "Mopping up the old and broken Beverages" # Remove outdated versions from the cellar
+brew linkapps
 brew cleanup
+
+echo "Here are all the bottles and Kegs installed in your cellar"
+brew list
