@@ -46,7 +46,8 @@ brew install proxytunnel					# Install CLI Proxy tunneling app
 brew install msitools						# Install MSI "Windoze" installer files
 brew install metasploit						# Install the Metasploit Framework
 brew install ettercap						# Install the Ettercap "man in the middle" tool
-brew install aircrack-ng
+brew install aircrack-ng					# Install Air Sniffer
+# brew install absinthe						# Install SQL Exploiter
 
 echo "Brewing Utility Binaries" 			# install Utility Binaries
 brew install p7zip 							# Install CLI Version of 7Zip
@@ -55,7 +56,6 @@ brew install osxutils 						# Install MetaData and CLI Utilis for OSX
 brew install screen 						# Install the GNU Screen application for Full screen window manager
 installcask the-unarchiver 					# Install The Unarchiver app for OSX
 brew install liquirprompt					# Install Prompt for CLI (best I've ever seen)
-#installcask dropbox 						# Install DropBox Application
 
 echo "Brewing VM/Remote Access Binaries" 	# Install VM/Remote Access
 installcask virtualbox 						# Install Virtual Box x86 architecture Virtualization
@@ -89,6 +89,7 @@ installcask vlc 							# Install one of the world's most popular Players/editors
 installcask miro-video-converter 			# Install a video Converter
 installcask imagealpha 						# Install a heavy compression package fore PNG Images
 installcask imageoptim 						# Install an image optimized for faster loading speeds
+brew install id3tool						# Install a CLI id3tool manipulation for tagging media
 
 echo "Brewing General CLI Binaries" # install General CLI Binaries
 brew install tree 							# Install a Visual (text) Directory Tree Displaying tool
@@ -98,9 +99,10 @@ brew install trash 							# Install a Trash command to send filez from CLI to th
 brew install liquidprompt 					# Install an Awsome "prompt" for the terminal (completely configurable)
 brew install keychain 						# Install a KeyChain application for SSH-SSL keys
 brew install exiv2 							# Install an Image Meta Library and it's tools
-brew install git 							# Install a powerful decentrilized revision control system
 brew install pigz 							# Install Paralell implementation of GZip (multicore-multiprocessor)
-# installcask iterm2							# Install new "terminal"
+# installcask iterm2						# Install new "terminal"
+brew install ssh-copy-id					# Install SSH ID Copy to login to remote machines
+brew install htop-osx						# Install OSX ascii "top" Application processes display
 
 echo "Brewing Programing Languages/Utilities" # Install Programming Utils/Language Binaries
 brew install gcc47 							# install Gcc 4.7
@@ -116,6 +118,9 @@ brew install zopfli 						# Install re-compressor for GZip Archives (tighter Com
 brew install python							# Install the Python Language (note the following commands are updaters)
 brew install sysbench						# Install a System Benchmarking CLI app
 brew install msgpack						# Install a Bianary serialization format to exchange data between different programing languages
+brew install git 							# Install a powerful decentrilized revision control system
+brew install git-extras 					# Install Additional stuff for Git
+brew install hub							# Install Hub a commandline wrapper for Github
 
 pip install --upgrade setuptools
 pip install --upgrade pip
