@@ -12,6 +12,7 @@ brew install coreutils 						# Install GN Core Utilities
 brew install findutils 						# Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 brew install bash 							# Install Bash 4
 brew install wget --enable-iri 				# Install wget with IRI support
+brew install tmux							# Install multi termerminal support in a single frame
 
 # Install RingoJS and Narwhal
 # Note that the order in which these are installed is important; see http://git.io/brew-narwhal-ringo.
@@ -34,9 +35,9 @@ function installcask() {
 }
 
 echo "Brewing Hacking/Cracking Binaries" 	# Install Hacking/cracking Binaries
-#brew install ncrack						# Install NCrack Network Cracking Utility (Currently Broken)
+# brew install ncrack						# Install NCrack Network Cracking Utility (Currently Broken)
 brew install NMAP 							# Install NMAP CLI
-#brew install John 							# install John the Ripper password cracker CLI (Currently Broken)
+# brew install John 						# install John the Ripper password cracker CLI (Currently Broken)
 brew install tor 							# install Tor Network CLI
 brew install pdfcrack 						# Install a PDF Password Cracking utility
 brew install elasticsearch					# Install install ElasticSearch Distributed Search
@@ -44,7 +45,7 @@ brew install redis							# install Redis Server (for Whitechappel and elasticsea
 brew install sshtrix						# Install SSH Login Cracker (sshv1, v2)
 brew install proxytunnel					# Install CLI Proxy tunneling app
 brew install msitools						# Install MSI "Windoze" installer files
-brew install metasploit						# Install the Metasploit Framework
+# brew install metasploit					# Install the Metasploit Framework
 brew install ettercap						# Install the Ettercap "man in the middle" tool
 brew install aircrack-ng					# Install Air Sniffer
 # brew install absinthe						# Install SQL Exploiter
@@ -55,7 +56,7 @@ brew install osxfuse 						# Install OSX Fuse drive compatability utility
 brew install osxutils 						# Install MetaData and CLI Utilis for OSX
 brew install screen 						# Install the GNU Screen application for Full screen window manager
 installcask the-unarchiver 					# Install The Unarchiver app for OSX
-brew install liquirprompt					# Install Prompt for CLI (best I've ever seen)
+brew install liquidprompt					# Install Prompt for CLI (best I've ever seen)
 
 echo "Brewing VM/Remote Access Binaries" 	# Install VM/Remote Access
 installcask virtualbox 						# Install Virtual Box x86 architecture Virtualization

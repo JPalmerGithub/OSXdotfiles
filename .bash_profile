@@ -1,7 +1,7 @@
 #!/bin/bash
 # Add `~/bin` to the `$PATH`
 export PATH="$PATH:~:~/bin:~/Applications:/bin:/sbin:/usr/local/bin:/usr/bin:/usr/sbin:/opt/X11/bin:/Applications"
-export PATH="$PATH:$HOME/bin:$HOME/.rvm/bin"
+export PATH="$PATH:$HOME/bin:$HOME/.rvm/bin:/Applications/Utilities"
 export PATH="$PATH:/usr/local/opt/coreutils/libexec/gnubin"
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
@@ -18,14 +18,15 @@ export LANG='en_GB'
 # Set Less as the default pager
 export PAGER='less -M -N'
 
-# Set the Standard Editor as Sublime Text (Symlink to subl created in ~/bin)
+# Set the Standard Editor as Sublime Text
+# (Symlink to subl created in ~/bin, app located in /Applications/Sublime Text/Contents/SharedSupport/bin/)
 export VISUAL='subl'
 export EDITOR='subl'
 
 # History File Manipulation
 
 # Expand "!" history when pressing space
-bind Space:magic-space
+# bind Space:magic-space
 
 # When the command contains an invalid history operation (for instance when
 # using an unescaped "!" (I get that a lot in quick e-mails and commit
@@ -39,7 +40,7 @@ shopt -s histreedit
 export HISTTIMEFORMAT="${FG_BLUE}${FONT_BOLD}%Y/%m/%d %H:%M:%S${FONT_RESET} "
 
 # Hist length and filesize
-export HISTSIZE=10000
+export HISTSIZE=1000
 export HISTFILESIZE=$HISTSIZE
 # Below ignores both Dups and space first commands
 export HISTCONTROL=ignoreboth
@@ -79,13 +80,6 @@ shopt -s no_empty_cmd_completion
 # fashion when performing filename expansion
 shopt -s nocaseglob
 
-
-# Case-insensitive globbing (used in pathname expansion)
-shopt -s nocaseglob
-
-# Autocorrect typos in path names when using `cd`
-shopt -s cdspell
-
 # Enable some Bash 4 features when possible:
 # * `autocd`, e.g. `**/qux` will enter `./foo/bar/baz/qux`
 # * Recursive globbing, e.g. `echo **/*.txt`
@@ -121,3 +115,4 @@ source `brew --repository`/Library/Contributions/brew_bash_completion.sh
 # Make the "sudo" prompt more useful, without requiring access to "visudo".
 export SUDO_PROMPT='[sudo] password for %u on %h: '
 
+archey.sh
