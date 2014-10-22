@@ -115,4 +115,4 @@ source `brew --repository`/Library/Contributions/brew_bash_completion.sh
 # Make the "sudo" prompt more useful, without requiring access to "visudo".
 export SUDO_PROMPT='[sudo] password for %u on %h: '
 
-archey.sh
+archey

@@ -1,2 +1,4 @@
-# .hushlogin is a dummy file that shortens the time it takes the terminal to present itself.
-# It has no other purpose
+# The mere presence of this file in the home directory disables the system
+# copyright notice, the date and time of the last login, the message of the
+# day as well as other information that may otherwise appear on login.
+# See `man login`.
