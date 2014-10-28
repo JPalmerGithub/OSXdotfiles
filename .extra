@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# This is a spaceholder for extra shell commands that I would like executed for my Bash Shells.
+# Stuff that does not fit into Aliases, prompt, path, functions etc...
