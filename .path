@@ -1,0 +1,8 @@
+#!/bin/bash
+	export PATH="$PATH:/bin:/sbin:"
+	export PATH="$PATH:$HOME:$HOME/Applications:$HOME/Library/Scripts:"
+	export PATH="$PATH:/Applications:/Applications/Utilities:"
+	export PATH="$PATH:/opt/X11/bin:/opt/X11R6/bin:/opt/homebrew-cask/caskroom:"
+	export PATH="$PATH:/usr:/usr/bin:/usr/sbin:/usr/share:/usr/X11R6:/usr/X11R6/bin:"
+	export PATH="$PATH:/usr/local/:/usr/local/bin:/usr/local/opt:/usr/local/sbin:/usr/local/git/bin:"
+	export PATH="$PATH:/usr/local/mysql/bin:/usr/local/opt/coreutils/libexec/gnubin:"

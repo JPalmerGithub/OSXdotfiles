@@ -12,7 +12,7 @@
 #  5.   Process Management
 #  6.   Networking
 #  7.   System Operations & Information
-#  8.   Web Development
+#  8.   Web/programming  Development
 #  9.   Reminders & Notes
 #
 #  ---------------------------------------------------------------------------
@@ -33,11 +33,7 @@
     
 #   Set Paths
 #   ------------------------------------------------------------
-    export PATH="$PATH:/usr/local/bin/"
-    export PATH="$PATH:/usr/local/git/bin:/sw/bin/:/usr/local/bin:/usr/local/:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
-    export PATH="$PATH:~:~/bin:~/Applications:/bin:/sbin:/usr/local/bin:/usr/bin:/usr/sbin:/opt/X11/bin:/Applications"
-    export PATH="$PATH:$HOME/bin:$HOME/.rvm/bin:/Applications/Utilities"
-    export PATH="$PATH:/usr/local/opt/coreutils/libexec/gnubin"
+#   All Paths are now located in path file    
 
 #   Set Default Editor (change 'subl' to the editor of your choice)
 #   ------------------------------------------------------------
@@ -162,6 +158,11 @@
 #   showa: to remind yourself of an alias (given some part of it)
 #   ------------------------------------------------------------
     showa () { /usr/bin/grep --color=always -i -a1 $@ ~/Library/init/bash/aliases.bash | grep -v '^\s*$' | less -FSRXc ; }
+
+#   X11 Environment
+#   ------------------------------------------------------------
+export DISPLAY=:0.0
+
 
 #   Call my Archey app for machine information on first open of any shell window
 #   ------------------------------------------------------------
