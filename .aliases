@@ -46,7 +46,7 @@
 
 #   Open Sublime Text with filename from CLI    
 #   -----------------------------------------------------------------------------------
-	alias edit="/Applications/'Sublime Text 2.app'/Contents/SharedSupport/bin/subl $1"
+	alias edit="/Applications/'Sublime Text.app'/Contents/SharedSupport/bin/subl $1"
 
 # 	Detect which `ls` flavor is in use
 #   -----------------------------------------------------------------------------------

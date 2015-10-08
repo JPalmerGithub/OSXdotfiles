@@ -5,4 +5,4 @@
 source ~/.config/liquidpromptrc
 
 # Use the liquidprompt
-source ~/.liquidprompt/liquidprompt
+source ~/liquidprompt/liquidprompt

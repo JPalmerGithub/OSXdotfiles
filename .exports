@@ -1,26 +1,71 @@
 #!/bin/bash
-# Make vim the default editor
-export EDITOR="vim"
+#	set the default editors
+    export VISUAL='subl'
+	export EDITOR="subl"
+	export CVSEDITOR="subl"
+	export CVS_RSH="ssh"
+	export SVN_EDITOR="subl"
+	export GIT_EDITOR="subl"
 
-# Larger bash history (allow 32³ entries; default is 500)
-export HISTSIZE=32768
-export HISTFILESIZE=$HISTSIZE
-export HISTCONTROL=ignoredups
-# Make some commands not show up in history
-export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help"
 
-# Prefer US English and use UTF-8
-export LANG="en_US"
-export LC_ALL="en_US.UTF-8"
+#	Larger bash history (allow 32³ entries; default is 500)
+#   Hist length and filesize
+	export HISTSIZE=32768
+	export HISTFILESIZE=$HISTSIZE
+	export HISTCONTROL=erasedups
+    export HISTCONTROL=ignoreboth
+#	Make some commands not show up in history
+	export HISTIGNORE="ls:la:cls:clear:cd:cd ~:~:pwd:exit:date:* --help"
 
-# Highlight section titles in manual pages
-export LESS_TERMCAP_md="$ORANGE"
+#   Keep track of the time the commands were executed.
+#   The xterm colour escapes require special care when piping; e.g. "| less -R".
+    export HISTTIMEFORMAT="${FG_BLUE}${FONT_BOLD}%Y/%m/%d %H:%M:%S${FONT_RESET} "
+#   Ignore common commands
+    export HISTIGNORE="ls::pwd:exit:date:* --help"
+#   Make new shells get the history lines from all previous
+#   shells instead of the default "last window closed" history
+    export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 
-# Don’t clear the screen after quitting a manual page
-export MANPAGER="less -X"
+#   Highlight section titles in manual pages
+    export LESS_TERMCAP_md="$ORANGE"
+#   Don’t clear the screen after quitting a manual page
+    export MANPAGER="less -X"
 
-# Always enable colored `grep` output
-export GREP_OPTIONS="--color=auto"
+#   Always enable colored `grep` output
+    export GREP_OPTIONS="--color=auto"
 
-# Link Homebrew casks in `/Applications` rather than `~/Applications`
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+#	Prefer US English and use UTF-8
+	export LANG="en_US"
+	export LC_ALL="en_US.UTF-8"
+
+#	Highlight section titles in manual pages
+	export LESS_TERMCAP_md="$ORANGE"
+
+#	Don’t clear the screen after quitting a manual page
+	export MANPAGER="less -X"
+
+#   Set Less as the default pager
+    export PAGER='less -M -N'
+
+#	Always enable colored `grep` output
+	export GREP_OPTIONS="--color=auto"
+
+#	Link Homebrew casks in `/Applications` rather than `~/Applications`
+	export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
+#   Set default blocksize for ls, df, du
+#   from this: http://hints.macworld.com/comment.php?mode=view&cid=24491
+#   ------------------------------------------------------------
+    export BLOCKSIZE=1k
+
+#   Make the "sudo" prompt more useful, without requiring access to "visudo".
+    export SUDO_PROMPT='[sudo] password for %u on %h: '
+
+    export CLICOLOR=1
+
+
+#   X11 Environment
+#   ------------------------------------------------------------
+	export DISPLAY=:0.0
+
+
