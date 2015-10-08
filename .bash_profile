@@ -25,7 +25,7 @@
 #    * ~/.path can be used to extend `$PATH`.
 #    * ~/.extra can be used for other settings you don’t want to commit.
 
-    for file in ~/.{path,bash_prompt,aliases,functions,extra}; do
+    for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
         [ -r "$file" ] && [ -f "$file" ] && source "$file"
     done
     unset file
@@ -33,49 +33,12 @@
     
 #   Set Paths
 #   ------------------------------------------------------------
-#   All Paths are now located in path file    
-
-#   Set Default Editor (change 'subl' to the editor of your choice)
+#   All Paths are now located in .path    
+#   All Exports (Where Convienient) are located in .exports
 #   ------------------------------------------------------------
-    export VISUAL='subl'
-    export EDITOR='subl'
 
-#   Set default blocksize for ls, df, du
-#   from this: http://hints.macworld.com/comment.php?mode=view&cid=24491
-#   ------------------------------------------------------------
-    export BLOCKSIZE=1k
-
-#   Prefer US English and use UTF-8
-    export LANG="en_US"
-    export LC_ALL="en_US.UTF-8"
-    export LANG='en_GB'
-
-#   Set Less as the default pager
-    export PAGER='less -M -N'
-
-#   Expand "!" history when pressing space
-#   bind Space:magic-space
-#   When the command contains an invalid history operation (for instance when
-#   using an unescaped "!" (I get that a lot in quick e-mails and commit
-#   messages) or a failed substitution (e.g. "^foo^bar" when there was no "foo"
-#   in the previous command line), do not throw away the command line, but let me
-#   correct it.
     shopt -s histreedit
 
-#   Keep track of the time the commands were executed.
-#   The xterm colour escapes require special care when piping; e.g. "| less -R".
-    export HISTTIMEFORMAT="${FG_BLUE}${FONT_BOLD}%Y/%m/%d %H:%M:%S${FONT_RESET} "
-
-#   Hist length and filesize
-    export HISTSIZE=1000
-    export HISTFILESIZE=$HISTSIZE
-#   Below ignores both Dups and space first commands
-    export HISTCONTROL=ignoreboth
-#   Ignore common commands
-    export HISTIGNORE="ls:la:cls:clear:pwd:exit:date:* --help"
-#   Make new shells get the history lines from all previous
-#   shells instead of the default "last window closed" history
-    export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 #   Append to the Bash history file, rather than overwriting it
     shopt -s histappend
 
@@ -114,14 +77,6 @@
         shopt -s "$option" 2> /dev/null
     done
 
-#   Highlight section titles in manual pages
-    export LESS_TERMCAP_md="$ORANGE"
-#   Don’t clear the screen after quitting a manual page
-    export MANPAGER="less -X"
-
-#   Always enable colored `grep` output
-    export GREP_OPTIONS="--color=auto"
-
 #   Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
     [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2 | tr ' ' '\n')" scp sftp ssh
 
@@ -139,9 +94,6 @@
     [ -f /etc/bash_completion ] && source /etc/bash_completion
     [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
-#   Make the "sudo" prompt more useful, without requiring access to "visudo".
-    export SUDO_PROMPT='[sudo] password for %u on %h: '
-
 #   -----------------------------
 #   2.  MAKE TERMINAL BETTER
 #   -----------------------------
@@ -158,11 +110,6 @@
 #   showa: to remind yourself of an alias (given some part of it)
 #   ------------------------------------------------------------
     showa () { /usr/bin/grep --color=always -i -a1 $@ ~/Library/init/bash/aliases.bash | grep -v '^\s*$' | less -FSRXc ; }
-
-#   X11 Environment
-#   ------------------------------------------------------------
-export DISPLAY=:0.0
-
 
 #   Call my Archey app for machine information on first open of any shell window
 #   ------------------------------------------------------------
