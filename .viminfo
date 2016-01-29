@@ -9,6 +9,7 @@
 ~h
 # Command Line History (newest to oldest):
 :q!
+:w@
 :wq!
 
 # Search String History (newest to oldest):
@@ -24,19 +25,134 @@
 	issh bob@bitsafe.systems -p56612dddd
 
 # File marks:
-'0  11  0  /usr/bin/gosafe-bob
-'1  1  0  ~/Downloads/q1-bitlabs
-'2  37220  27  ~/Downloads/q1-bitlabs
+'0  1  205  ~/root
+'1  53  0  ~/love.gpg
+'2  154  0  /Applications/Microsoft Remote Desktop.app/Contents/_CodeSignature/CodeResources
+'3  9  0  /Applications/Microsoft Remote Desktop.app/Contents/_CodeSignature/CodeResources
+'4  81  0  /Applications/Microsoft Remote Desktop.app/Contents/Info.plist
+'5  11  0  /usr/bin/gosafe-bob
+'6  1  0  ~/Downloads/q1-bitlabs
+'7  37220  27  ~/Downloads/q1-bitlabs
 
 # Jumplist (newest first):
+-'  1  205  ~/root
+-'  53  0  ~/love.gpg
+-'  1  0  ~/love.gpg
+-'  154  0  /Applications/Microsoft Remote Desktop.app/Contents/_CodeSignature/CodeResources
+-'  1  0  /Applications/Microsoft Remote Desktop.app/Contents/_CodeSignature/CodeResources
+-'  9  0  /Applications/Microsoft Remote Desktop.app/Contents/_CodeSignature/CodeResources
+-'  81  0  /Applications/Microsoft Remote Desktop.app/Contents/Info.plist
+-'  1  0  /Applications/Microsoft Remote Desktop.app/Contents/Info.plist
 -'  11  0  /usr/bin/gosafe-bob
 -'  1  0  /usr/bin/gosafe-bob
 -'  1  0  ~/Downloads/q1-bitlabs
 -'  37220  27  ~/Downloads/q1-bitlabs
 -'  1  0  ~/Downloads/q1-bitlabs
 -'  37220  27  ~/Downloads/q1-bitlabs
+-'  11  0  /usr/bin/gosafe-bob
+-'  1  0  /usr/bin/gosafe-bob
+-'  1  0  ~/Downloads/q1-bitlabs
+-'  37220  27  ~/Downloads/q1-bitlabs
+-'  1  0  ~/Downloads/q1-bitlabs
+-'  37220  27  ~/Downloads/q1-bitlabs
+-'  81  0  /Applications/Microsoft Remote Desktop.app/Contents/Info.plist
+-'  1  0  /Applications/Microsoft Remote Desktop.app/Contents/Info.plist
+-'  11  0  /usr/bin/gosafe-bob
+-'  1  0  /usr/bin/gosafe-bob
+-'  1  0  ~/Downloads/q1-bitlabs
+-'  37220  27  ~/Downloads/q1-bitlabs
+-'  1  0  ~/Downloads/q1-bitlabs
+-'  37220  27  ~/Downloads/q1-bitlabs
+-'  11  0  /usr/bin/gosafe-bob
+-'  1  0  /usr/bin/gosafe-bob
+-'  1  0  ~/Downloads/q1-bitlabs
+-'  37220  27  ~/Downloads/q1-bitlabs
+-'  1  0  ~/Downloads/q1-bitlabs
+-'  37220  27  ~/Downloads/q1-bitlabs
+-'  81  0  /Applications/Microsoft Remote Desktop.app/Contents/Info.plist
+-'  1  0  /Applications/Microsoft Remote Desktop.app/Contents/Info.plist
+-'  11  0  /usr/bin/gosafe-bob
+-'  1  0  /usr/bin/gosafe-bob
+-'  1  0  ~/Downloads/q1-bitlabs
+-'  37220  27  ~/Downloads/q1-bitlabs
+-'  1  0  ~/Downloads/q1-bitlabs
+-'  37220  27  ~/Downloads/q1-bitlabs
+-'  11  0  /usr/bin/gosafe-bob
+-'  1  0  /usr/bin/gosafe-bob
+-'  1  0  ~/Downloads/q1-bitlabs
+-'  37220  27  ~/Downloads/q1-bitlabs
+-'  1  0  ~/Downloads/q1-bitlabs
+-'  37220  27  ~/Downloads/q1-bitlabs
+-'  81  0  /Applications/Microsoft Remote Desktop.app/Contents/Info.plist
+-'  1  0  /Applications/Microsoft Remote Desktop.app/Contents/Info.plist
+-'  11  0  /usr/bin/gosafe-bob
+-'  1  0  /usr/bin/gosafe-bob
+-'  1  0  ~/Downloads/q1-bitlabs
+-'  37220  27  ~/Downloads/q1-bitlabs
+-'  1  0  ~/Downloads/q1-bitlabs
+-'  37220  27  ~/Downloads/q1-bitlabs
+-'  11  0  /usr/bin/gosafe-bob
+-'  1  0  /usr/bin/gosafe-bob
+-'  1  0  ~/Downloads/q1-bitlabs
+-'  37220  27  ~/Downloads/q1-bitlabs
+-'  1  0  ~/Downloads/q1-bitlabs
+-'  37220  27  ~/Downloads/q1-bitlabs
+-'  154  0  /Applications/Microsoft Remote Desktop.app/Contents/_CodeSignature/CodeResources
+-'  1  0  /Applications/Microsoft Remote Desktop.app/Contents/_CodeSignature/CodeResources
+-'  9  0  /Applications/Microsoft Remote Desktop.app/Contents/_CodeSignature/CodeResources
+-'  81  0  /Applications/Microsoft Remote Desktop.app/Contents/Info.plist
+-'  1  0  /Applications/Microsoft Remote Desktop.app/Contents/Info.plist
+-'  11  0  /usr/bin/gosafe-bob
+-'  1  0  /usr/bin/gosafe-bob
+-'  1  0  ~/Downloads/q1-bitlabs
+-'  37220  27  ~/Downloads/q1-bitlabs
+-'  1  0  ~/Downloads/q1-bitlabs
+-'  37220  27  ~/Downloads/q1-bitlabs
+-'  11  0  /usr/bin/gosafe-bob
+-'  1  0  /usr/bin/gosafe-bob
+-'  1  0  ~/Downloads/q1-bitlabs
+-'  37220  27  ~/Downloads/q1-bitlabs
+-'  1  0  ~/Downloads/q1-bitlabs
+-'  37220  27  ~/Downloads/q1-bitlabs
+-'  81  0  /Applications/Microsoft Remote Desktop.app/Contents/Info.plist
+-'  1  0  /Applications/Microsoft Remote Desktop.app/Contents/Info.plist
+-'  11  0  /usr/bin/gosafe-bob
+-'  1  0  /usr/bin/gosafe-bob
+-'  1  0  ~/Downloads/q1-bitlabs
+-'  37220  27  ~/Downloads/q1-bitlabs
+-'  1  0  ~/Downloads/q1-bitlabs
+-'  37220  27  ~/Downloads/q1-bitlabs
+-'  11  0  /usr/bin/gosafe-bob
+-'  1  0  /usr/bin/gosafe-bob
+-'  1  0  ~/Downloads/q1-bitlabs
+-'  37220  27  ~/Downloads/q1-bitlabs
+-'  1  0  ~/Downloads/q1-bitlabs
+-'  37220  27  ~/Downloads/q1-bitlabs
+-'  81  0  /Applications/Microsoft Remote Desktop.app/Contents/Info.plist
+-'  1  0  /Applications/Microsoft Remote Desktop.app/Contents/Info.plist
+-'  11  0  /usr/bin/gosafe-bob
+-'  1  0  /usr/bin/gosafe-bob
+-'  1  0  ~/Downloads/q1-bitlabs
 
 # History of marks within files (newest to oldest):
+
+> ~/root
+	"	1	205
+	^	1	206
+	.	1	241
+	+	1	241
+
+> ~/love.gpg
+	"	53	0
+	^	53	0
+	.	52	0
+	+	52	0
+
+> /Applications/Microsoft Remote Desktop.app/Contents/_CodeSignature/CodeResources
+	"	154	0
+
+> /Applications/Microsoft Remote Desktop.app/Contents/Info.plist
+	"	81	0
 
 > /usr/bin/gosafe-bob
 	"	11	0

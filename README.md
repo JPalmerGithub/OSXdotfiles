@@ -20,7 +20,7 @@ All of the .git* files have been pulled from others
 Please use at your own risk, It works on OSX 10.10 and "seems" to work on 10.11 at least so far.
 
 I've tried to Document as much as I could so the scripts should be self explanatory. Also note
-I have plagurized some of the script out of several other persons that have written brew scripts on Git,
+I have plagurized some (Alot Actually) of the script out of several other persons that have written brew scripts on Git,
 but cannot note them here (Just too many people, too long a time connecting code snippets).
 
 Thanks,

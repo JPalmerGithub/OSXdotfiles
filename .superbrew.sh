@@ -30,7 +30,7 @@ brew install php55 --with-gmp			    # Install Latest PHP (5.5)
 echo "Brewing Native Apps" 					  # Install native apps
 brew tap homebrew/versions 					  # Tap the versions Formulas for Homebrew
 brew tap caskroom/versions            # Tap the versions Formulas for casks
-brew tap phinze/homebrew-cask 				# Tap the Cask formulas
+# brew tap phinze/homebrew-cask 			# Tap the Cask formulas
 brew install brew-cask 						    # Install the Brew-Cask commands (continued in the Function)
 
 function installcask() {
@@ -60,7 +60,6 @@ brew install osxfuse 						      # Install OSX Fuse drive compatability utility
 brew install osxutils 					     	# Install MetaData and CLI Utilis for OSX
 brew install homebrew/dupes/screen	  # Install the GNU Screen application for Full screen window manager
 installcask the-unarchiver 					  # Install The Unarchiver app for OSX
-brew install liquidprompt					    # Install Prompt for CLI (best I've ever seen)
 
 echo "Brewing VM/Remote Access Binaries" 	# Install VM/Remote Access
 installcask virtualbox 						    # Install Virtual Box x86 architecture Virtualization
@@ -68,8 +67,8 @@ brew install rdesktop						      # Install Remote Desktop (Windows)
 
 echo "Brewing PDF Manipulation Binaries" 	# Install PDF Manipulation Binaries
 brew install pdf2htmlex 					    # Install Text PDF to HTML designer
-brew install pdftohtml 					     	# Install Standard PDF to HTML designer
-brew install pdf2image 				      	# Install PDF to Image App (Currently Broken)
+# brew install pdftohtml 					   	# Install Standard PDF to HTML designer
+# brew install pdf2image 				     	# Install PDF to Image App (Currently Broken)
 
 echo "Brewing Web/Net Related Binaries" 	# install Web Related Binaries
 brew install wget 					      		# Install wget downloader application
@@ -82,6 +81,7 @@ brew install tcptrace						      # Install CLI Utilities to analize TCP Dump tra
 brew install tcpreplay				    		# Install TCP Dump "edit/replay" Functionality
 brew install tcpflow				      		# Install better CLI "tcpdump" utility
 brew install openssl				      		# Install the Open Source SSL toolkit
+# brew install midori
 
 echo "Brewing Media Related Binaries" # install Web Related Binaries
 brew install ffmpeg 				      		# Install FFMpeg, a CLI Media tool
@@ -99,7 +99,7 @@ brew install tree 							      # Install a Visual (text) Directory Tree Displayi
 brew install midnight-commander 			# Text based "OSX Finder" Looks like the original "Norton Commander"
 brew install rename 						      # Install A better Rename command
 brew install trash 							      # Install a Trash command to send filez from CLI to the trash in the finder
-brew install liquidprompt 			   		# Install an Awsome "prompt" for the terminal (completely configurable)
+# brew install liquidprompt 			 		# Install an Awsome "prompt" for the terminal (completely configurable)
 brew install keychain 				    		# Install a KeyChain application for SSH-SSL keys
 brew install exiv2 					      		# Install an Image Meta Library and it's tools
 brew install pigz 					       		# Install Paralell implementation of GZip (multicore-multiprocessor)
@@ -115,12 +115,12 @@ brew install php-code-sniffer 				# PHP Code analyzer
 brew install rhino 					      		# Rhino, Java Script Engine
 brew install ack 						         	# Serch web for instances of text
 brew install node 				      			# Node Code Optimiser for OSX
-brew install lua52 				       			# LUA version 5.2 language
+# brew install lua52 				     			# LUA version 5.2 language
 brew install zopfli 			       			# re-compressor for GZip Archives (tighter Compression)
 brew install python			      				# the Python Language (note the following commands are updaters)
 brew install sysbench		       				# System Benchmarking CLI app
 brew install msgpack		      				# Bianary serialization format to exchange data between different programing languages
-brew install git 				         			# powerful decentrilized revision control system
+# brew install git 				       			# powerful decentrilized revision control system
 brew install git-extras      					# Additional stuff for Git
 brew install hub					         		# Hub a commandline wrapper for Github
 brew install postgres --no-python 		# Postgres, a good open source relational database
